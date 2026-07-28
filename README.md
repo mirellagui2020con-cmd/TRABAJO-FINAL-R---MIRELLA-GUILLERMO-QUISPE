@@ -30,7 +30,7 @@ Comparar el saldo de deuda financiada promedio según el tamaño de empresa. Ana
 ## 📌 Conclusiones Principales
 
 ### Grafico 1 - Saldo de deuda financiada promedio por tamaño de empresa: 
-Se evidencia una brecha muy amplia entre tamaños de empresa: las medianas empresas mantienen un saldo de deuda promedio de S/ 1.44 millones, mientras que las pequeñas llegan a S/ 428 mil y las microempresas apenas a S/ 68 mil. Esto confirma que, en términos absolutos, el sistema financiero formal concentra el financiamiento en las empresas de mayor tamaño.
+Se evidencia una brecha muy amplia entre tamaños de empresa: las medianas empresas mantienen un saldo de deuda promedio de S/ 1.44 millones, mientras que las pequeñas llegan a S/ 428 mil y las microempresas apenas a S/ 68 mil. Esto confirma que el sistema financiero formal concentra el financiamiento en las empresas de mayor tamaño.
 
 ### Grafico 2 - Distribución del índice de apalancamiento por tamaño de empresa: 
 Al observar la relación entre deuda y ventas, la dispersión es mucho mayor en las microempresas que en las medianas, lo que indica que el financiamiento que sí obtienen las microempresas representa una carga relativa más alta e inestable frente a sus ingresos, mientras que en las medianas empresas la deuda se comporta de forma más proporcional y predecible respecto a sus ventas.
