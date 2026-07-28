@@ -187,6 +187,7 @@ library(scales)
 ## GRAFICOS
 
 # 1. Saldo de deuda promedio por tamano de empresa
+
 grafico1 <- datos %>%
   group_by(tamano) %>%
   summarise(saldo_promedio = mean(saldo_miles_soles, na.rm = TRUE)) %>%
@@ -205,6 +206,7 @@ grafico1
 ggsave("saldo_deuda_por_tamano.png", grafico1, width = 8, height = 6, dpi = 300)
 
 # 2. Distribucion del indice de apalancamiento por tamano (escala log)
+
 grafico2 <- datos %>%
   filter(indice_apalancamiento > 0) %>%
   ggplot(aes(x = tamano, y = indice_apalancamiento, fill = tamano)) +
@@ -223,6 +225,7 @@ grafico2
 ggsave("apalancamiento_por_tamano.png", grafico2, width = 8, height = 6, dpi = 300)
 
 # 3. Porcentaje de empresas exportadoras por tamano
+
 grafico3 <- datos %>%
   group_by(tamano) %>%
   summarise(pct_exporta = mean(exporta == "SI") * 100) %>%
@@ -241,6 +244,7 @@ grafico3
 ggsave("pct_exportadoras_por_tamano.png", grafico3, width = 8, height = 6, dpi = 300)
 
 # 4. Numero de empresas por departamento (top 10)
+
 grafico4 <- datos %>%
   count(departamento, sort = TRUE) %>%
   slice_head(n = 10) %>%
@@ -258,7 +262,8 @@ grafico4
 ggsave("empresas_por_departamento.png", grafico4, width = 8, height = 6, dpi = 300)
 
 # 5. Saldo de deuda promedio por sector economico y tamano de empresa
-grafico6 <- datos %>%
+
+grafico5 <- datos %>%
   group_by(sector, tamano) %>%
   summarise(saldo_promedio = mean(saldo_miles_soles, na.rm = TRUE), .groups = "drop") %>%
   ggplot(aes(x = reorder(sector, saldo_promedio), y = saldo_promedio, fill = tamano)) +
